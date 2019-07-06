@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "id": "1506a86e-6b4a-4ae0-a53e-9f5cf6b97a65",
+      "script_name": "CLI_DEVICE_DETECT_EXP",
+      "name": "Job1",
+      "enabled": true,
+      "JobStatus": "Completed"
+    },
+    {
+      "id": "2b95e01d-7d08-422e-9331-2d0cf31da9fc",
+      "script_name": "SAVE_COPY_OF_CISCO_CONFIG_EXP",
+      "name": "Job2",
+      "enabled": true,
+      "JobStatus": "Pending"
+    }
+  ]
+}

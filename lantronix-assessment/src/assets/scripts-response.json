@@ -1,0 +1,104 @@
+{
+  "scripts": [
+    {
+      "id": "17fcf98b-0784-4a68-9f54-61a1934727e9",
+      "script_id": "2d21b7cd-e188-4050-9aae-56b8de8b0908",
+      "script": {
+        "id": "2d21b7cd-e188-4050-9aae-56b8de8b0908",
+        "name": "CLI_DEVICE_DETECT_EXP",
+        "description": "Script to detect the prompt on a device connected to a SLC or SLB device port, and set the device port name to the prompt.",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "da582012-d3f3-4822-84bb-c58639214de4",
+      "script_id": "860e216e-12e2-470c-8b46-0159d6cb394a",
+      "script": {
+        "id": "860e216e-12e2-470c-8b46-0159d6cb394a",
+        "name": "CLI_AUTH_RADIUS_EXP",
+        "description": "Script to set the RADIUS authentication settings of the SLC",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "e478d076-269a-4e8d-98c5-101b60cd75ec",
+      "script_id": "e7db1c50-c61a-4b72-a2e7-9fdb8d0bf1c8",
+      "script": {
+        "id": "e7db1c50-c61a-4b72-a2e7-9fdb8d0bf1c8",
+        "name": "CLI_AUTH_RADIUS_PY",
+        "description": "Script to set the RADIUS authentication settings of the SLC",
+        "script_language": "python"
+      }
+    },
+    {
+      "id": "623fb9b0-44ca-4035-8777-f10c7ecc29e8",
+      "script_id": "a6f6dfcc-f4d7-4227-bcd6-a086c04726b0",
+      "script": {
+        "id": "a6f6dfcc-f4d7-4227-bcd6-a086c04726b0",
+        "name": "GET_DEVICE_TEMPERATURE_EXP",
+        "description": "Script to get the current internal temperature of the console manager",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "0d132736-a8f3-4449-8e05-189266b6eecb",
+      "script_id": "a9dc0c9c-ccb2-40d9-a91a-ca93f25fabe9",
+      "script": {
+        "id": "a9dc0c9c-ccb2-40d9-a91a-ca93f25fabe9",
+        "name": "GET_LOAD_DEVICE_PORT_EXP",
+        "description": "This script interacts with an SLB managed device to get the load of PDU outlet. In this case, the managed device connected to the SLB managed device is a ServerTech PDU",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "6f6069f0-eee7-497c-bae7-c6da1c36e56e",
+      "script_id": "45907bd1-b610-4f2c-8039-f45720719a3e",
+      "script": {
+        "id": "45907bd1-b610-4f2c-8039-f45720719a3e",
+        "name": "SAVE_COPY_OF_CISCO_CONFIG_EXP",
+        "description": "This script saves a copy of the running configuration of a Cisco server to a TFTP server. The Cisco server is connected to an SLC or SLB device port",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "fb4b776f-02c5-4ac5-b29a-2a01355e48e9",
+      "script_id": "980fbdc4-6bd5-42f2-bf50-a46e1382bea9",
+      "script": {
+        "id": "980fbdc4-6bd5-42f2-bf50-a46e1382bea9",
+        "name": "SET_DEVICE_PORT_NAME_EXP",
+        "description": "Script to set the name on all SLC/B device ports",
+        "script_language": "expect"
+      }
+    },
+    {
+      "id": "c86637cb-32b5-465e-9c79-47a1cc602315",
+      "script_id": "9bf71555-38db-4783-b2e2-1d2c0ac16610",
+      "script": {
+        "id": "9bf71555-38db-4783-b2e2-1d2c0ac16610",
+        "name": "GET_DEVICE_TEMPERATURE_PY",
+        "description": "This script interacts with the CLI on the SLC 8000 or SLB console manager to get the current internal temperature of the device",
+        "script_language": "python"
+      }
+    },
+    {
+      "id": "3d0a6566-040c-4b30-b05f-244aff8eb28e",
+      "script_id": "15c77f56-e05c-487e-b1c3-c8c1cfdac684",
+      "script": {
+        "id": "15c77f56-e05c-487e-b1c3-c8c1cfdac684",
+        "name": "GET_DEVICE_TEMPERATURE_TCL",
+        "description": "This script interacts with the CLI on the SLC 8000 or SLB console manager to get the current internal temperature of the device",
+        "script_language": "tcl"
+      }
+    },
+    {
+      "id": "4e5ffe5c-9729-426c-a8f0-72d165c1b822",
+      "script_id": "90f1222b-9565-4c13-a006-cd5dd57acd80",
+      "script": {
+        "id": "90f1222b-9565-4c13-a006-cd5dd57acd80",
+        "name": "SET_DNS_SERVERS_SLC_EXP",
+        "description": "This script sets the DNS servers of the SLC",
+        "script_language": "expect"
+      }
+    }
+  ]
+}

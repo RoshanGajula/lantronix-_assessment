@@ -1,0 +1,66 @@
+<div class="header hdr1">
+  <a href="#" class="logo">Script Manager</a>
+  <div class="header-right">
+    <a href="#"><i class='far fa-question-circle'></i>Help</a>
+    <a href="#"><i class='far fa-user-circle'></i>Vinay</a>
+  </div>
+</div>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" [ngClass]="{'active': activeTab=='Scripts'}" (click)="activeTab='Scripts'; tabsHandler($event)">Scripts</button>
+  <button class="tablinks" [ngClass]="{'active': activeTab=='Jobs'}" (click)="activeTab='Jobs'; tabsHandler($event)">Jobs</button>
+</div>
+<div class="table-search">
+  <input type="text" (keyup)="applyFilter($event.target.value)" placeholder="Search" />
+</div>
+<!-- Tab content -->
+<div class="tabcontent" [ngClass]="{'active': activeTab=='Jobs'}" *ngIf="activeTab=='Jobs' && jobsData">
+  <h3>Jobs</h3>
+  <table class="customTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Script</th>
+        <th>Job Status</th>
+        <th>Enabled</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of ((searchSource)? searchSource: jobsData)">
+        <td>{{list.name}}</td>
+        <td>{{list.script_name}}</td>
+        <td>{{list.JobStatus}}</td>
+        <td>{{list.enabled}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="tabcontent" [ngClass]="{'active': activeTab=='Scripts'}" *ngIf="activeTab=='Scripts' && scriptsData">
+  <h3>Scripts</h3>
+  <table class="customTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Language</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of ((searchSource)? searchSource: scriptsData)">
+        <td>{{list.script.name}}</td>
+        <td>{{list.script.description}}</td>
+        <td>Example</td>
+        <td>{{list.script.script_language}}</td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
